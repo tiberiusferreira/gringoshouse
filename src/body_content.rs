@@ -21,8 +21,10 @@ pub fn body_content(model: &Model) -> El<Msg> {
     Como alunos, ajudamos uns aos outros com as disciplinas da universidade, estudando juntos na sala sempre que possível.";
     let paragraph_3 = "Temos conciência que a vida universitária vai além da sala de aula. \
     Dessa forma valorizamos discussões enriquecedoras, principalmente sobre temas polêmicos.";
-    let paragraph_4 = "Temos conciência que a vida universitária vai além da sala de aula. \
-    Dessa forma valorizamos discussões enriquecedoras, principalmente sobre temas polêmicos.";
+    let paragraph_4 = "Devido a reclamações de vizinhos quanto ao barulho ocasionado por festas \
+    e principalmente devido à rotina dos moradores não fazemos festas ou alugamos a casa para eventos.";
+    let paragraph_5 = "Isto não impede de irmos em festas, bares, ou mesmo tomarmos uma cerveja \
+    ou outra ao redor da piscina.";
 
     if model.current_page == Page::Sobre {
         div![
@@ -52,6 +54,9 @@ pub fn body_content(model: &Model) -> El<Msg> {
                 ],
                 p![attrs!{At::Class => "about-body-container-main-text"},
                     paragraph_4
+                ],
+                p![attrs!{At::Class => "about-body-container-main-text"},
+                    paragraph_5
                 ],
             ],
         ]
