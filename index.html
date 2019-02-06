@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingresseira</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/about_content.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    <section id="app"></section>
+
+    <script src='./pkg/package.js'></script>
+
+    <script>
+        const { render } = wasm_bindgen;
+        function run() {
+            render();
+        }
+        wasm_bindgen('./pkg/package_bg.wasm')
+            .then(run)
+            .catch(console.error);
+    </script>
+</body>
+</html>

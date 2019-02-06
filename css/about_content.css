@@ -1,0 +1,33 @@
+.about-body-container{
+    display: grid;
+    grid-column-gap: 20%;
+    grid-template-columns: 55% 25%;
+    width: 90%;
+    margin: 10vh auto 0 auto;
+}
+
+.about-body-container-main{
+    grid-column: 1 / span 1;
+    /*background-color: #8a8a8a;*/
+    height: 100px;
+}
+
+.about-body-container-side{
+    grid-column: 2 / span 1;
+    /*background-color: #8a8a8a;*/
+}
+
+.about-body-container-side-h1{
+    margin: 0 auto 0 auto;
+    padding-bottom: 1em;
+    font-weight: 100;
+    font-size: 37px;
+    line-height: 1.2em;
+}
+
+.about-body-container-side-para{
+    margin: 0 auto 0 auto;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.2em;
+}
