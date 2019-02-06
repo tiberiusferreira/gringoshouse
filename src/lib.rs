@@ -17,7 +17,6 @@ pub enum Page {
     Fotos,
     Vagas,
     Sobre,
-    Contato,
 }
 
 impl Default for Model {
