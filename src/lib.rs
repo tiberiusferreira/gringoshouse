@@ -23,7 +23,7 @@ pub enum Page {
 impl Default for Model {
     fn default() -> Self {
         Self {
-            current_page: Page::Fotos
+            current_page: Page::Sobre
         }
     }
 }
@@ -63,12 +63,12 @@ fn view(state: seed::App<Msg, Model>, model: &Model) -> El<Msg> {
 
 fn routes(url: &seed::Url) -> Msg {
     if url.path.is_empty() {
-        return Msg::ChangePage(Page::Fotos)
+        return Msg::ChangePage(Page::Sobre)
     }
 
     match Page::from_str(&url.path[0]){
         Ok(page) => return Msg::ChangePage(page),
-        Err(_) => return Msg::ChangePage(Page::Fotos)
+        Err(_) => return Msg::ChangePage(Page::Sobre)
     };
 }
 
