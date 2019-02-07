@@ -5,6 +5,7 @@ mod header;
 use header::*;
 mod body_content;
 use body_content::*;
+mod about_content;
 use std::str::FromStr;
 
 #[derive(Clone)]

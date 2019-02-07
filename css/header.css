@@ -89,13 +89,13 @@
     }
 
     .header-nav-item-button{
-        font-size: 3vw;
+        font-size: 23px;
     }
 
     .logo-container{
         grid-column: 1;
         grid-row: 1;
-        margin: 0 5px 0 3px;
+        margin: auto 5px auto 3px;
         padding: 10px 0 10px 0;
         font-family: "proxima-nova";
         font-size: 4vw;
