@@ -50,7 +50,7 @@ pub fn body_content(model: &Model) -> El<Msg> {
                 img![attrs!{At::Src => "fotos_rep/random4.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random14.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random15.jpg"}, style!["width" => "100%"]],
-                img![attrs!{At::Src => "fotos_rep/random19.jpg"}, style!["width" => "100%"]],
+                img![attrs!{At::Src => "fotos_rep/random25.jpg"}, style!["width" => "100%"]],
             ]
         ]
     }else {
