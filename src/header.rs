@@ -23,15 +23,15 @@ pub fn header(model: &Model) -> El<Msg> {
                 ul![attrs!{At::Class => "header-nav-container"},
                         li![
                             attrs!{At::Class => "header-nav-item"},
-                            a![simple_ev("click", Msg::ChangePageAndHistory(Page::Fotos)), fotos_attr, "Fotos"]
+                            a![simple_ev("click", Msg::ChangePage(Page::Fotos)), fotos_attr, "Fotos"]
                             ],
                         li![
                             attrs!{At::Class => "header-nav-item"},
-                            a![simple_ev("click", Msg::ChangePageAndHistory(Page::Sobre)), sobre_attr, "Sobre"]
+                            a![simple_ev("click", Msg::ChangePage(Page::Sobre)), sobre_attr, "Sobre"]
                             ],
                         li![
                             attrs!{At::Class => "header-nav-item"},
-                            a![simple_ev("click", Msg::ChangePageAndHistory(Page::Vagas)), vagas_attr, "Vagas"]
+                            a![simple_ev("click", Msg::ChangePage(Page::Vagas)), vagas_attr, "Vagas"]
                             ],
                 ],
                 div![ attrs!{At::Class => "logo-container"}, span!["Gringos House"]],
