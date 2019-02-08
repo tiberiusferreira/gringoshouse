@@ -6,6 +6,7 @@ use header::*;
 mod body_content;
 use body_content::*;
 mod about_content;
+mod fotos_content;
 use std::str::FromStr;
 
 #[derive(Clone)]

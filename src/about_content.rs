@@ -27,7 +27,6 @@ pub fn about_body_content() -> El<Msg> {
         div![
             attrs!{At::Class => "about-body-container"},
             div![
-                attrs!{At::Class => "about-body-container-side"},
                 h1![attrs!{At::Class => "about-body-container-main-h1"},
                     title
                     ],

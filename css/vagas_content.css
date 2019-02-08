@@ -1,0 +1,44 @@
+.vagas-body-container{
+    display: block;
+    width: 90%;
+    margin: 10vh auto 0 auto;
+    padding-bottom: 80px;
+}
+
+.vagas-body-container{
+    max-width: 900px;
+}
+
+.vagas-body-container-main-h1{
+    margin: 0 auto 0 auto;
+    padding-bottom: 1.5em;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.vagas-body-container-main-h2{
+    margin: 0 auto 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.vagas-body-container-main-link{
+    color: #454545;
+}
+
+.vagas-body-container-main-text{
+    margin: 0 auto 0 auto;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: "proxima-nova";
+    line-height: 1.6em;
+    color: #454545;
+    text-align: center;
+    word-wrap: break-word;
+}
