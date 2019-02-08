@@ -16,7 +16,9 @@ pub fn about_body_content() -> El<Msg> {
                      At::Target => "_blank"; At::Class => "about-body-container-main-link"}, "ARU"],
                       " - Associação de Repúblicas da UNICAMP."
                 ];
-    let paragraph_2 = "O nosso objetivo principal é ser um lugar agradável e propício aos estudos. \
+
+    //bjetivo principal
+    let paragraph_2 = "O nosso objetivo principal é criar um ambiente que permita o melhor aproveitamento da experiência universitária. \
     Como alunos, ajudamos uns aos outros com as disciplinas da universidade, estudando juntos na sala sempre que possível.";
     let paragraph_3 = "Temos conciência que a vida universitária vai além da sala de aula. \
     Dessa forma valorizamos discussões enriquecedoras, principalmente sobre temas polêmicos.";
