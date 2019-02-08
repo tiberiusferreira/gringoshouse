@@ -33,6 +33,7 @@ impl Default for Model {
 pub enum Msg {
     ChangePageAndHistory(Page),
     ChangePage(Page),
+    Nothing,
 }
 
 /// The sole source of updating the model; returns a fresh one.
@@ -41,14 +42,15 @@ fn update(msg: Msg, model: Model) -> Update<Model> {
         // The change page pushes the history and THEN changes the page itself
         Msg::ChangePageAndHistory(page) => {
             // This just pushes the history
-            seed::push_path(vec![&page.to_string()]);
+//            seed::push_path(vec![&page.to_string()]);
             // Now we call the routing
             update(Msg::ChangePage(page), model)
         },
 
         // This is separate, because in-app naviation needs to call push_route,
         // but we don't want to call it from browser navigation. (eg back button)
-        Msg::ChangePage(current_page) => Render (Model {current_page, ..model})
+        Msg::ChangePage(current_page) => Render (Model {current_page, ..model}),
+        Msg::Nothing => Skip(model)
     }
 }
 
@@ -63,20 +65,28 @@ fn view(state: seed::App<Msg, Model>, model: &Model) -> El<Msg> {
 }
 
 fn routes(url: &seed::Url) -> Msg {
-    if url.path.is_empty() {
-        return Msg::ChangePage(Page::Sobre)
-    }
-
-    match Page::from_str(&url.path[0]){
-        Ok(page) => return Msg::ChangePage(page),
-        Err(_) => return Msg::ChangePage(Page::Sobre)
-    };
+//    if url.path.is_empty() {
+//        seed::log("empty");
+//        return Msg::ChangePage(Page::Sobre)
+//    }
+//
+//    match Page::from_str(&url.path[0]){
+//        Ok(page) => {
+//            seed::log("Ok, page");
+//            return Msg::ChangePage(page)
+//        },
+//        Err(_) => {
+//            seed::log("Err ");
+//            return Msg::ChangePage(Page::Sobre)
+//        }
+//    };
+    Msg::Nothing
 }
 
 #[wasm_bindgen]
 pub fn render() {
     seed::App::build(Model::default(), update, view)
-        .routes(routes)
+//        .routes(routes)
         .finish()
         .run();
 }
