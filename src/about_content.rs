@@ -60,5 +60,3 @@ pub fn about_body_content() -> El<Msg> {
         ]
 }
 
-
-// mente aberta // livres de preconceitos // dona helena nossa mãe // ARU
