@@ -16,6 +16,7 @@ pub fn fotos_body_content() -> El<Msg> {
                 img![attrs!{At::Src => "fotos_rep/random16.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random22.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random23.jpg"}, style!["width" => "100%"]],
+                img![attrs!{At::Src => "fotos_rep/random27.jpg"}, style!["width" => "100%"]],
             ],
             div![attrs!{At::Class => "column"},
                 img![attrs!{At::Src => "fotos_rep/sala0.jpg"}, style!["width" => "100%"]],
@@ -27,6 +28,7 @@ pub fn fotos_body_content() -> El<Msg> {
                 img![attrs!{At::Src => "fotos_rep/random11.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random17.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random20.jpg"}, style!["width" => "100%"]],
+                img![attrs!{At::Src => "fotos_rep/random28.jpg"}, style!["width" => "100%"]],
             ],
             div![attrs!{At::Class => "column"},
                 img![attrs!{At::Src => "fotos_rep/cozinha0.jpg"}, style!["width" => "100%"]],
@@ -38,6 +40,7 @@ pub fn fotos_body_content() -> El<Msg> {
                 img![attrs!{At::Src => "fotos_rep/random18.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random21.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random24.jpg"}, style!["width" => "100%"]],
+                img![attrs!{At::Src => "fotos_rep/random29.jpg"}, style!["width" => "100%"]],
             ],
             div![attrs!{At::Class => "column"},
                 img![attrs!{At::Src => "fotos_rep/random0.jpg"}, style!["width" => "100%"]],
@@ -48,6 +51,7 @@ pub fn fotos_body_content() -> El<Msg> {
                 img![attrs!{At::Src => "fotos_rep/random14.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random15.jpg"}, style!["width" => "100%"]],
                 img![attrs!{At::Src => "fotos_rep/random25.jpg"}, style!["width" => "100%"]],
+                img![attrs!{At::Src => "fotos_rep/random26.jpg"}, style!["width" => "100%"]],
             ]
         ]
 }

@@ -69,7 +69,7 @@ pub fn body_content(model: &Model) -> El<Msg> {
                     ],
                     br![],
                     p![attrs!{At::Class => "vagas-body-container-main-text"},
-                    "Pessoas que gostem que socializar com os moradores. Somos uma rep unidade e não \"cada um no seu canto\"."
+                    "Pessoas que gostem que socializar com os moradores. Somos uma rep unida e não \"cada um no seu canto\"."
                     ],
                     br![],
                     h2![attrs!{At::Class => "vagas-body-container-main-h2"},

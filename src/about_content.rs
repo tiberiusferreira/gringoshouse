@@ -7,7 +7,7 @@ pub fn about_body_content() -> El<Msg> {
 
     let title = "A Gringos de Hoje";
     let paragraph_1 = p![attrs!{At::Class => "about-body-container-main-text"},
-                    "República Mista tradicional localizada em Barão Geraldo. \
+                    "República Mista localizada em Barão Geraldo fundada em 2005. \
                     Composta majoritariamente por estudantes da Unicamp, \
                     mas possuímos também estudantes da FACAMP, \
                     PUC-Campinas e pré-vestibulandos. Procuramos \
