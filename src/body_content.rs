@@ -22,6 +22,10 @@ pub fn body_content(model: &Model) -> El<Msg> {
                     ],
                     br![],
                     p![attrs!{At::Class => "vagas-body-container-main-text"},
+                    "Aluguel fixo, igual para todos (R$600)."
+                    ],
+                    br![],
+                    p![attrs!{At::Class => "vagas-body-container-main-text"},
                     "3 minutos a pé da entrada do IB e da FEA e 5 minutos do RU."
                     ],
                     br![],

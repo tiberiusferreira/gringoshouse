@@ -544,9 +544,9 @@ __exports.__wbindgen_json_parse = function(ptr, len) {
     return addHeapObject(JSON.parse(getStringFromWasm(ptr, len)));
 };
 
-__exports.__wbindgen_closure_wrapper60 = function(a, b, _ignored) {
-    const f = wasm.__wbg_function_table.get(27);
-    const d = wasm.__wbg_function_table.get(28);
+__exports.__wbindgen_closure_wrapper59 = function(a, b, _ignored) {
+    const f = wasm.__wbg_function_table.get(18);
+    const d = wasm.__wbg_function_table.get(19);
     const cb = function(arg0) {
         this.cnt++;
         let a = this.a;
