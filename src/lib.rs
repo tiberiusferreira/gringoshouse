@@ -37,7 +37,7 @@ pub enum Msg {
 }
 
 /// The sole source of updating the model; returns a fresh one.
-fn update(msg: Msg, model: Model) -> Update<Model> {
+fn update(msg: Msg, model: Model) -> Update<Msg ,Model> {
     match msg {
         // The change page pushes the history and THEN changes the page itself
         Msg::ChangePageAndHistory(page) => {

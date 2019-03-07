@@ -5,4 +5,5 @@ Cargo.lock
 
 .idea/*
 */*.DS_Store
+.DS_Store
 /fotos_rep_original
