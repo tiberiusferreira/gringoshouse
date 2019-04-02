@@ -37,7 +37,8 @@ pub enum Msg {
 }
 
 /// The sole source of updating the model; returns a fresh one.
-fn update(msg: Msg, model: Model) -> Update<Msg ,Model> {
+fn update(msg: Msg, model: &mut Model) -> Update<Msg> {
+
     match msg {
         // The change page pushes the history and THEN changes the page itself
         Msg::ChangePageAndHistory(page) => {
@@ -50,10 +51,11 @@ fn update(msg: Msg, model: Model) -> Update<Msg ,Model> {
         // This is separate, because in-app naviation needs to call push_route,
         // but we don't want to call it from browser navigation. (eg back button)
         Msg::ChangePage(current_page) => {
-            Render (Model {current_page, ..model})
+            model.current_page = current_page;
+            Render.into()
         },
         Msg::Nothing => {
-            Skip(model)
+            Skip.into()
         }
     }
 }
@@ -63,7 +65,7 @@ fn update(msg: Msg, model: Model) -> Update<Msg ,Model> {
 
 
 /// The top-level component we pass to the virtual dom.
-fn view(state: seed::App<Msg, Model>, model: &Model) -> El<Msg> {
+fn view(model: &Model) -> El<Msg> {
         div![header(model),
         body_content(model)]
 }

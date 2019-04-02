@@ -12,7 +12,7 @@ pub fn body_content(model: &Model) -> El<Msg> {
                 div![
                     attrs!{At::Class => "vagas-body-container-side"},
                     h1![attrs!{At::Class => "vagas-body-container-main-h1"},
-                        "Não temos vagas no momento :("
+                        "Temos 1 vaga!"
                         ],
                     h2![attrs!{At::Class => "vagas-body-container-main-h2"},
                     "Benefícios de morar conosco"
@@ -77,7 +77,7 @@ pub fn body_content(model: &Model) -> El<Msg> {
                     ],
                     br![],
                     h2![attrs!{At::Class => "vagas-body-container-main-h2"},
-                    "Não temos vagas no momento, mas se quiser, fale conosco:"
+                    "Tem interesse na vaga? Fale conosco!"
                     ],
                     p![attrs!{At::Class => "vagas-body-container-main-text"},
                     a![attrs!{At::Href => "https://telegram.me/TiberioFerreira";

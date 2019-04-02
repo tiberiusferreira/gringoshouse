@@ -1,7 +1,6 @@
 use crate::Msg;
 use seed::*;
 use seed::prelude::*;
-use super::*;
 
 pub fn fotos_body_content() -> El<Msg> {
     div![attrs!{At::Class => "row"},

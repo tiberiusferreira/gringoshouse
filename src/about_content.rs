@@ -1,7 +1,6 @@
 use crate::Msg;
 use seed::*;
 use seed::prelude::*;
-use super::*;
 
 pub fn about_body_content() -> El<Msg> {
 
